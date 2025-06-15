@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(#b6ccfe,#e2eafc);
+}
+input ,label,button{
+    display: block;
+    margin: 8px;
+}
+fieldset{
+    width: fit-content;
+}
+.container{
+    font-size: 30px;
+    animation:container 0.3s ease infinite ;
+}
+.sighn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+}
+.logo{
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    width: 500px;
+    height : 500px;
+    /* display: none; */
+}
+.tshirt{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 600px;
+    height : 600px;
+}
+form{
+    width:500px;
+    position: absolute;
+    left: 500px;
+}
+/* التأثيرات العامة على النصوص */
+label {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 3px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background-color: #cbe2ec;
+    color: rgb(12, 1, 14);
+}
+
+input:focus {
+    border-color: #1aa3da;
+    outline: none;
+    box-shadow: 0 0 150px rgba(3, 29, 27, 0.349);
+}
+
+/* تأثيرات على الزر */
+button {
+    padding: 12px 20px;
+    background-color: #dee6dc;
+    color:black;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    width: 80%;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2e59d9;
+    transform: scale(1.05);
+}
+
+/* إضافة التدرج على الـ Fieldset */
+fieldset {
+    width: 80%;
+    background: linear-gradient(145deg, #f0f4f8, #d6e2f3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* إضافة تأثيرات جميلة على الـ Form */
+.sighn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4e73df;
+    margin-bottom: 10px;
+    position: relative;
+    left: 140px;
+}
+.call{
+    position: absolute;
+    top: 650px;
+    display: flex;
+    left: 650px;
+    width: 50px;
+    padding: 20px;
+}
+.wats,.face{
+    width: 50px;
+    padding: 20px;
+}
+@media (max-width:768px){
+.logo{
+    display: none;
+}
+.tshirt{
+    position: absolute;
+    left: 310px;
+}
+.sighn{
+    position: absolute;
+    left: 0px;
+}
+.call{
+    position: absolute;
+    left: 120px;
+}
+}
